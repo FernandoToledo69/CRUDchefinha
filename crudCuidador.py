@@ -131,8 +131,8 @@ def listar_usuarios(dados):
         opcao04=str(input("\nDigite 'sair' para voltar pro menu: "))
 
         if (opcao04 == 'sair'):
-             print("\n\033[32mVoltando...\033[m")
-             return
+            print("\n\033[32mVoltando...\033[m")
+            return
         
         else:
             print("\033[31mOpção invalida, tente novamente:\033[m")
@@ -207,7 +207,7 @@ def menu_adm(dados):
         print("\033[31mErro, tente novamente:\033[m")
 
 
-def crud_cuidador():
+def crud_cpf_cuidador():
     dados = carregar_dados()
 
     print("-" * 40)
@@ -243,5 +243,3 @@ def crud_cuidador():
         else:
             print("Opção inválida.")
 
-#Iniciar:
-crud_cuidador()
